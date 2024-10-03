@@ -9,15 +9,19 @@ import lombok.Data;
 
 @Entity
 @Data
-@Table(name ="cliente")
+@Table(name ="flor")
 
-public class cliente {
+public class flor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    private String tipo;
+    private String color;
+    private String variedad;
+    private int cantidad;
+    private float compra;
+    private float venta;
     
-    private String nombre;
-    private String direccion;
-    private String informacionContacto;
+    
 
 }

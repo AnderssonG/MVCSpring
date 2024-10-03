@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-FloristeriaApplication<florist>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.floristeria.floristeria.FloristeriaApplication",
+            "projectName": "florist",
+            
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

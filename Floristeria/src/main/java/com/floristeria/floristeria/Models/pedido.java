@@ -1,5 +1,8 @@
 package com.floristeria.floristeria.Models;
 
+import java.sql.Timestamp;
+import java.time.Instant;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -9,15 +12,18 @@ import lombok.Data;
 
 @Entity
 @Data
-@Table(name ="cliente")
+@Table(name ="pedido")
 
-public class cliente {
+public class pedido {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     
-    private String nombre;
-    private String direccion;
-    private String informacionContacto;
+    private int flor;
+    private int cantidad;
+    private float suma;
+    private int cliente;
+    private boolean estado = true;
+    private Timestamp fech = Timestamp.from(Instant.now());
 
 }
